@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+<link rel="stylesheet" href="css/style.css" />
+
+<body>
+    <!-- Page Content -->
+    <div class="w3-main w3-padding-large">
+        <!-- Header -->
+        <button class="w3-button w3-padding-large w3-margin-top" onclick="navigate('homepage.html')">
+            <i class="fas fa-long-arrow-alt-left"></i> Atpakaļ uz sākumlapu
+        </button>
+        <header class="w3-container w3-center" style="padding: 64px 16px" id="home">
+            <h1 class="w3-jumbo" style="color: rgba(0, 165, 198, 1); text-align: left">
+                <b>Publiskā datubāze</b>
+            </h1>
+            <p style="color: black; text-align: left">
+                Šajā datubāzē Tu vari apskatīt piejamās vielas un aprīkojumu
+            </p>
+            <div style="display: flex;">
+                <input id="myInput" class="w3-input w3-border" type="text" placeholder="Search" value="" style="width: 600px;" onkeyup="filter()"/>
+                <div id="myBtnContainer">
+                    <button id="allBttn" class="w3-button w3-padding-medium filterBttn active" onclick="filterSelection('all')">
+                        Rādīt visu
+                    </button>
+                    <button id="vielaBttn" class="w3-button w3-padding-medium filterBttn" onclick="filterSelection('Viela')">
+                        Rādīt vielas
+                    </button>
+                    <button id="aprikojumsBttn" class="w3-button w3-padding-medium filterBttn" onclick="filterSelection('Aprīkojums')">
+                        Rādīt aprīkojumu
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <table id="myTable">
+            <tr class="header">
+                <th style="width: 20%">ID</th>
+                <th style="width: 20%">Nosaukums</th>
+                <th style="width: 10%">Tips</th>
+                <th style="width: 10%">Apakštips</th>
+                <th style="width: 5%">Skaits</th>
+                <th style="width: 5%">Svars</th>
+                <th style="width: 50%">Komentāri</th>
+            </tr>
+        </table>
+
+        <button class="w3-button w3-padding-large w3-margin-top errBttn" style="float: right;">
+            Ziņot par kļūdu
+        </button>
+        <!-- End Contact Section -->
+        <footer></footer>
+    </div>
+    <!-- END PAGE CONTENT -->
+</body>
+<script type="text/javascript" src="../js/scripts.js"></script>
+<script>
+    fillRows();
+</script>
+</html>

@@ -1,0 +1,74 @@
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+p,h1,h2,h3,h4,h5,h6 {
+    color: white;
+}
+.bg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: rgb(0,212,255);
+  background: linear-gradient(0deg, rgba(0,212,255,1) 0%, rgba(0,165,198,1) 55%);
+  min-height: 100%;
+}
+
+.spacer {
+    height: 1px;
+    width: auto;
+    background-color: white;
+}
+
+.mainBttn {
+    background-color: rgba(0,165,198,1);
+    color: white;
+}
+
+.errBttn {
+    background-color: rgb(198, 0, 33);
+    color: white;
+}
+
+.secondaryBttn {
+    background-color: transparent;
+    color: rgba(0,165,198,1);
+    outline: solid rgba(0,165,198,1) 1px;
+}
+
+.filterBttn {
+    border: solid rgba(0,165,198,1) 1px;
+    margin: 0px 0px 0px 10px;
+    color: rgba(0,165,198,1);
+    border-radius: 10pt;
+    -webkit-border-radius: 10pt;
+    -moz-border-radius: 10pt;
+    -ms-border-radius: 10pt;
+    -o-border-radius: 10pt;
+}
+
+.filterBttn.active {
+    border: solid rgba(0,165,198,1) 1px;
+    margin: 0px 0px 0px 10px;
+    color: white;
+    background-color: rgba(0,165,198,1);
+}
+
+
+#myTable {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #ddd;
+    font-size: 18px;
+  }
+  
+  #myTable th, #myTable td {
+    text-align: left;
+    padding: 12px;
+  }
+  
+  #myTable tr {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  #myTable tr.header, #myTable tr:hover {
+    background-color: #f1f1f1;
+  }
